@@ -7,6 +7,7 @@ var options = {
   method: 'GET'
 };
 
+// This is going to call the API and get the result
 http.request(options, function(res) {
   console.log('STATUS: ' + res.statusCode);
   console.log('HEADERS: ' + JSON.stringify(res.headers));
