@@ -14,4 +14,7 @@ http.request(options, function(res) {
   res.on('data', function (chunk) {
     console.log('BODY: ' + chunk);
   });
+  res.on('end', function() {
+    console.log("That's all folks!");
+  });
 }).end();
