@@ -7,6 +7,8 @@ var options = {
   method: 'GET'
 };
 
+console.log("Server started");
+
 http.request(options, function(res) {
   console.log('STATUS: ' + res.statusCode);
   console.log('HEADERS: ' + JSON.stringify(res.headers));
